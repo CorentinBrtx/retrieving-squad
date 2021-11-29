@@ -1,8 +1,13 @@
 from argparse import ArgumentParser
 from best_contexts import BestContextFinder
 
-parser = ArgumentParser()
-parser.add_argument("-d", "--dataset", dest="dataset_path", help="path to the dataset to use")
+parser = ArgumentParser(description="Find the best context for a given query.")
+parser.add_argument(
+    "-d",
+    "--dataset",
+    dest="dataset_path",
+    help="path to the dataset to use. Must be a json file in SQuAD format",
+)
 parser.add_argument("query", help="query to search for")
 
 args = parser.parse_args()
