@@ -1,4 +1,4 @@
-# Illuin Technology Project: Retrieving SQuAD
+# NLP Project: Retrieving SQuAD
 
 Find the best contexts among a large dataset for a given query.
 
